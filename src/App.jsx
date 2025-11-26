@@ -11,22 +11,20 @@ import NewsLetter from "./Components/NewsLetter/NewsLetter";
 function App() {
 
   return (
-  <div>
-    {/* Navbar */}
-<Navbar/>
-<Banner/>
-<Collection/>
-<BestSeller/>
-<NewsLetter/>
-<Brand/>
-<Fllow/>
-<Explore/>
-<Footer/>
-
-
+    <div>
+      {/* Navbar */}
+      <Navbar/>
+      <Banner/>
+      <Collection/>
+      <BestSeller/>
+      <NewsLetter/>
+      <Brand/>
+      <Fllow/>
+      <Explore/>
+      <Footer/>
     </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;
+
