@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./NewsLetter.css";
 import news1 from "./img1.png";
 import news2 from "./img2.png";
 import news3 from "./img3.png";
@@ -30,16 +31,16 @@ const products = [
   { image: news6, title: "Toddler Baby Girls Kids shoes", categories: "Shoes", price: 150 },
   { image: news7, title: "Canvas Casual Women Shoes, Sneakers", categories: "Shoes", price: 280 },
   { image: news8, title: "Buy Kids Shoes for boys Online", categories: "Shoes", price: 180, discountPrice: 150 },
-  { image: news9, title: "Classic Rimless Sunglasses Women ", categories: "Sun Glasses", price: 350, discountPrice: 300 },
-  { image: news10, title: "Eye Glasses Branded Luxury Sunglasses For Men", categories: "Sun Glasses", price: 350 },
-  { image: news11, title: "Wodison Classic Kids Sunglasses for Boys", categories: "Sun Glasses", price: 150, discountPrice: 120 },
-  { image: news12, title: "3-Pairs Gift Kids Sunglasses Girls", categories: "Sun Glasses", price: 180 },
-  { image: news13, title: "Fashion Accessories for Women ", categories: "Accessories", price: 500 },
-  { image: news14, title: "The Modern Man's Fashion Accessories", categories: "Accessories", price: 500 },
-  { image: news15, title: "Clips For Girls Baby Hair Accessories", categories: "Accessories", price: 300, discountPrice: 270 },
-  { image: news16, title: "Boy Kids fashion accessories", categories: "Accessories", price: 300, discountPrice: 270 },
+  { image: news9, title: "Classic Rimless Sunglasses Women", categories: "Sun Glasses", price: 350, discountPrice: 300 },
+  { image: news10, title: "Luxury Sunglasses For Men", categories: "Sun Glasses", price: 350 },
+  { image: news11, title: "Kids Sunglasses for Boys", categories: "Sun Glasses", price: 150, discountPrice: 120 },
+  { image: news12, title: "3-Pairs Kids Sunglasses Girls", categories: "Sun Glasses", price: 180 },
+  { image: news13, title: "Fashion Accessories for Women", categories: "Accessories", price: 500 },
+  { image: news14, title: "Men's Fashion Accessories", categories: "Accessories", price: 500 },
+  { image: news15, title: "Baby Hair Clips Girls", categories: "Accessories", price: 300, discountPrice: 270 },
+  { image: news16, title: "Kids fashion accessories", categories: "Accessories", price: 300, discountPrice: 270 },
   { image: news17, title: "Designer Handbags Lady", categories: "Bags", price: 800 },
-  { image: news18, title: "Best Sling Bags for Men ", categories: "Bags", price: 850, discountPrice: 820 },
+  { image: news18, title: "Best Sling Bags for Men", categories: "Bags", price: 850, discountPrice: 820 },
   { image: news19, title: "Unicorn Backpack for Girls", categories: "Bags", price: 500 },
   { image: news20, title: "Car Kids School Bags For Boys", categories: "Bags", price: 500 },
 ];
@@ -60,14 +61,12 @@ const Newsletter = () => {
         {/* TITLE */}
         <div className="flex items-center justify-center mb-10">
           <h2 className="sm:text-4xl text-3xl text-black font-normal capitalize">
-            Stay Connected —Subscribe to the newsletter 💌
+            Stay Connected — Subscribe to the newsletter 💌
           </h2>
         </div>
 
-        {/* CATEGORY + FILTER ROW */}
+        {/* CATEGORY + FILTER */}
         <div className="flex items-center justify-between mb-10">
-
-          {/* SCROLLABLE CATEGORIES */}
           <div className="flex items-center gap-4 md:gap-6 overflow-x-auto whitespace-nowrap scrollbar-hide">
             {categories.map((cate, index) => (
               <button
@@ -82,27 +81,43 @@ const Newsletter = () => {
             ))}
           </div>
 
-          {/* FILTER BUTTON */}
           <button className="px-4 py-1.5 bg-[#1e2832] text-base text-white font-normal capitalize flex items-center gap-1.5 cursor-pointer shrink-0 ml-4">
             <FaFilter size={"1rem"} /> Filter
           </button>
         </div>
 
-        {/* PRODUCTS GRID */}
+        {/* PRODUCT CARDS */}
         <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
           {filteredProducts.map((card, index) => (
-            <div key={index}>
+            <div
+              key={index}
+              className="relative bg-white p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200"
+            >
+              {/* Wishlist Button */}
+              <button className="absolute top-3 right-3 bg-white shadow-md rounded-full p-2 hover:bg-red-500 hover:text-white transition">
+                ❤️
+              </button>
+
               <img
                 src={card.image}
                 alt={card.title}
-                className="w-full h-100 object-contain rounded-lg bg-white transition-transform duration-300 hover:scale-105"
+                className="w-full h-60 object-contain rounded-lg bg-white transition-transform duration-300 hover:scale-105"
               />
-              <h3 className="mt-2 font-semibold">{card.title}</h3>
-              <p>{card.categories}</p>
-              <div className="flex items-center gap-4">
+
+              <h3 className="mt-3 font-semibold text-black">{card.title}</h3>
+
+              <p className="text-gray-500 text-sm">{card.categories}</p>
+
+              {/* Star Ratings */}
+              <div className="flex text-yellow-400 text-sm mb-1 mt-1">
+                ⭐⭐⭐⭐⭐
+              </div>
+
+              <div className="flex items-center gap-4 mt-2">
                 <p className={`${card.discountPrice ? "line-through text-gray-400" : "font-bold"}`}>
                   ₹{card.price}
                 </p>
+
                 {card.discountPrice && (
                   <p className="font-bold text-[#ff6f61]">₹{card.discountPrice}</p>
                 )}
@@ -117,6 +132,14 @@ const Newsletter = () => {
 };
 
 export default Newsletter;
+
+
+
+
+
+
+
+
 
 
 
