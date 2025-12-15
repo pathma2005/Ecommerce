@@ -26,7 +26,7 @@ const Footer = () => {
             </a>
 
             <p className="text-[#000] text-base leading-6">
-              Your trust makes our brand shine brighter. SRI’S is grateful to be
+              Your trust makes our brand shine brighter. ╭❤️～SRI’S is grateful to be
               part of your everyday style💗.
             </p>
 
