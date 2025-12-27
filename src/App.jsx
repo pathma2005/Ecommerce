@@ -1,33 +1,36 @@
-import Banner from "./Components/Banner/Banner"
-import Brand from "./Components/Brand/Brand";
-import Collection from "./Components/Collection/Collection";
-import Explore from "./Components/Explore/Explore";
-import Fllow from "./Components/Fllow/Fllow";
-import Footer from "./Components/Footer/Footer";
-import Navbar from "./Components/Navbar/Navbar";
-import NewsLetter from "./Components/NewsLetter/NewsLetter";
-import Card from "./Components/Card/Card";
 
-
-
-function App() {
-
-  return (
-    <div>
-      <Navbar/>
-      <Banner/>
-      <Brand/>
-      <Explore/>
-        <NewsLetter/>
-           <Card/>
-         <Collection/>
-               <Fllow/>
-      <Footer/>
-      </div>
-  );
-}
-
-export default App;
-
+ <Row>
+        <Card className="my-card" title="Current Balance">
+          <p >₹0</p>
+          <Button className="btn" type="primary">Reset Balance</Button>
+        </Card>
+         <Card className="my-card" title="Current Balance">
+          <p >₹0</p>
+          <Button className="btn" type="primary">Reset Balance</Button>
+        </Card>
+         <Card className="my-card" title="Current Balance">
+          <p >₹0</p>
+          <Button className="btn" type="primary">Reset Balance</Button>
+        </Card>
+         <Card className="my-card" title="Current Balance">
+          <p >₹0</p>
+          <Button className="btn" type="primary">Reset Balance</Button>
+        </Card>
+         <Card className="my-card" title="Current Balance">
+          <p >₹0</p>
+          <Button className="btn" type="primary">Reset Balance</Button>
+        </Card>
+         <Card className="my-card" title="Current Balance">
+          <p >₹0</p>
+          <Button className="btn" type="primary">Reset Balance</Button>
+        </Card>
+      </Row>
+      backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
 
