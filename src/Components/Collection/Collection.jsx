@@ -1,6 +1,6 @@
 import React from "react";
-import coll1 from "./img1.png";
-import coll2 from "./img2.png";
+import coll1 from "../../assets/Collectionimg1.png";
+import coll2 from  "../../assets/Collectionimg2.png"
 
 const Collection = () => {
   return (

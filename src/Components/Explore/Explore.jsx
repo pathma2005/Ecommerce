@@ -1,9 +1,9 @@
 import React from "react";
-import explore1 from "./img3.png";
-import explore2 from "./img2.png";
-import explore3 from "./img5.png";
-import explore4 from "./img1.png";
-import explore5 from "./img4.png";
+import explore1 from "../../assets/Exploreimg1.png";
+import explore2 from "../../assets/Exploreimg2.png";
+import explore3 from "../../assets/Exploreimg3.png";
+import explore4 from "../../assets/Exploreimg4.png";
+import explore5 from "../../assets/Exploreimg5.png"
 
 const Explore = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFillBagHeartFill } from "react-icons/bs";
-import bannerImg from "./img1.jpg";
+import bannerImg from "../../assets/Bannerimg.jpg"
 
 const Banner = () => {
   return (

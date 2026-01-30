@@ -1,9 +1,9 @@
 import React from "react";
-import foot1 from "./img1.png";
-import card1 from "./visa.png";
-import card2 from "./master.png";
-import card3 from "./paypal.png";
-import card4 from "./amex.png";
+import foot1 from "../../assets/logo.png";
+import card1 from "../../assets/visa.png";
+import card2 from "../../assets/master.png";
+import card3 from "../../assets/paypal.png";
+import card4 from "../../assets/amex.png";
 
 import { IoLogoFacebook, IoLogoTwitter } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa6";

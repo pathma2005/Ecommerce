@@ -1,10 +1,10 @@
 import React from "react";
-import foll1 from "./img1.png";
-import foll2 from "./img2.png";
-import foll3 from "./img3.png";
-import foll4 from "./img4.png";
-import foll5 from "./img5.png";
-import foll6 from "./img6.png";
+import foll1 from "../../assets/Fllowimg1.png";
+import foll2 from "../../assets/Fllowimg2.png";
+import foll3 from "../../assets/Fllowimg3.png";
+import foll4 from "../../assets/Fllowimg4.png";
+import foll5 from "../../assets/Fllowimg5.png";
+import foll6 from "../../assets/Fllowimg6.png";
 
 const Fllow = () => {
   const followers = [

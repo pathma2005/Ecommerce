@@ -1,25 +1,26 @@
 import React, { useState } from "react";
 import "./NewsLetter.css";
-import news1 from "./img1.png";
-import news2 from "./img2.png";
-import news3 from "./img3.png";
-import news4 from "./img4.png";
-import news5 from "./img5.png";
-import news6 from "./img6.png";
-import news7 from "./img7.png";
-import news8 from "./img8.png";
-import news9 from "./img9.png";
-import news10 from "./img10.png";
-import news11 from "./img11.png";
-import news12 from "./img12.png";
-import news13 from "./img13.png";
-import news14 from "./img14.png";
-import news15 from "./img15.png";
-import news16 from "./img16.png";
-import news17 from "./img17.png";
-import news18 from "./img18.png";
-import news19 from "./img19.png";
-import news20 from "./img20.png";
+
+import news1 from "../../assets/dress1.png";
+import news2 from "../../assets/dress2.png";
+import news3 from "../../assets/dress3.png";
+import news4 from "../../assets/dress4.png";
+import news5 from "../../assets/Shoe1.png";
+import news6 from "../../assets/Shoe2.png";
+import news7 from "../../assets/Shoe3.png";
+import news8 from "../../assets/shoe4.png";
+import news9 from "../../assets/sunglass1.png";
+import news10 from "../../assets/sunglass2.png";
+import news11 from "../../assets/sunglass3.png";
+import news12 from "../../assets/sunglass4.png";
+import news13 from "../../assets/acc1.png";
+import news14 from "../../assets/acc2.png";
+import news15 from "../../assets/acc3.png";
+import news16 from "../../assets/acc4.png";
+import news17 from "../../assets/bag1.png";
+import news18 from "../../assets/bag2.png";
+import news19 from "../../assets/bag3.png";
+import news20 from "../../assets/bag4.png";
 import { FaFilter } from "react-icons/fa";
 
 const products = [
